@@ -34,5 +34,13 @@ main (int argc, char *argv[])
   assert (np2 (1) == 1);
   assert (naive_np2 (2) == 2);
   assert (np2 (2) == 2);
+  assert (naive_np2 (500) == 512);
+  assert (np2 (500) == 512);
+  assert (naive_np2 (600) == 1024);
+  assert (np2 (600) == 1024);
+  assert (naive_np2 (65535) == 65536);
+  assert (np2 (65535) == 65536);
+  assert (naive_np2 (65536) == 65536);
+  assert (np2 (65536) == 65536);
   return EXIT_SUCCESS;
 }
