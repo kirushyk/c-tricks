@@ -7,7 +7,7 @@ next_power_of_2_naive (uint32_t n)
 {
   uint32_t p = 1;
   while (p < n)
-    p *= 2;
+    p *= 2; // or p <<= 1;
   return p;
 }
 
