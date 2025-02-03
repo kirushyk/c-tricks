@@ -20,5 +20,10 @@ main (int argc, char *argv[])
   assert (a == 1);
   assert (b == 2);
 
+  int c = 3;
+  // Will not work for same memory location
+  SWAP (c, c);
+  assert (c == 0);
+
   return EXIT_SUCCESS;
 }
